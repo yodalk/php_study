@@ -1,14 +1,18 @@
 # Desenvolvimento Webcompleto 
 Objetivo desse repositório é estudar as seguintes técnologias: HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC.
 
+
 ## Indice
 <ul style="list-style: none">
     <li><a href="#">Inicio</a></li>
     <li>
         <li>PHP</li>
         <ol>
+            <li><a href="#php-basic">PHP básico</a></li>
             <li><a href="#cgi">O que é CGI</a></li>
             <li><a href="#pdo">PHP intermediário PDO</a></li>
+            <li><a href="#string">String</a></li>
+            <li><a href="#pdo">PHP OOP</a></li>
         </ol>
     </li>
     <li>
@@ -21,6 +25,69 @@ Objetivo desse repositório é estudar as seguintes técnologias: HTML5, CSS3, S
 </ul>
 
 
+## PHP Básico
+<div id="php-basic">
+O básico sobre o php, váriaveis, tipos de dados, funções e syntax.
+</div>
+
+### Tipos de dados
+
+<span id="numeros"><b>Numericos:</b></span>
+
+```php
+$ano = 14; #int
+$preco = 10.99; #float
+
+# Debugg: mostra o tipo da variavel
+var_dump($ano); 
+var_dump($preco); 
+```
+
+
+<span id="array"><b>Array</b></span>
+
+```php
+# Array simples
+$frutas = array('Morango', 'Maçã', 'Uva');
+var_dump($frutas);
+
+# Array associativo
+$idade = array('Robson' => 29, 'Nicolas' => 4);
+forearch($pessoa as $p => $i) {
+    echo "Pessoa: {$p} tem {$i} anos\n";
+}
+```
+
+
+<span id="objetos-classes"><b>Objetos classes</b></span>
+
+```php
+class Carro {
+    public $modelo;
+    public $ano;
+    public $cor;
+    public function __construct($modelo, $cor) {
+        $this->modelo = $modelo;
+        $this->cor = $cor;
+    }
+    public function message() {
+        return "Carro modelo: {$this->modelo}\n cor: {$this->cor}";
+    }
+}
+
+$gol = new Carro("Gol", "Azul");
+echo $gol -> message();
+
+$volvo = new Carro("Volvo", "Amarelo");
+echo 
+```
+
+<span id="string"><b>Strings:</b></span>
+
+```php
+$msg = "Hello World";
+print "Quantidade de caracteres: " . strlen($msg);
+```
 
 ## CGI que é CGI
 <div id="cgi">
@@ -40,6 +107,12 @@ Objetivo desse repositório é estudar as seguintes técnologias: HTML5, CSS3, S
 
 ------------------------------
 ## PHP OOP - Classes e Objetos
+Do ingles Object Oriented Programing ou Programação orientada a objetos é um padrão de programação.
+
+Como assim? Enquanto a programação procedural é sobre escrever funções e procedimentos para resolver um programa, a programação orientada a objeto é sobre escrever um único objeto ou classe contendo funções e métodos para atingir uma solução.
+
+<h2>Paradigmas da Programação Orientada a Objeto</h2>
+
 <div id="pdo">
     <img src="abstra4.png">
     <img src="abstra3.png">
