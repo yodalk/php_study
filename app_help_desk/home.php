@@ -24,25 +24,33 @@
     </nav>
 
     <div class="container">    
+      <?php 
+        if(isset($_POST['login']) && $_POST['login'] == 'sucess')
+      ?>
+        <p class="text-success text-bold text-center">Login efetuado com sucesso</p>
+      <?php ?>
       <div class="row">
 
         <div class="card-home">
           <div class="card">
             <div class="card-header">
-              Menu
-            </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-6 d-flex justify-content-center">
-                  <img src="formulario_abrir_chamado.png" width="70" height="70">
-                </div>
-                <div class="col-6 d-flex justify-content-center">
-                  <img src="formulario_consultar_chamado.png" width="70" height="70">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+               Menu
+             </div>   
+             <div class="card-body">
+               <div class="row">
+                 <div class="col-6 d-flex justify-content-center">
+                   <img src="formulario_abrir_chamado.png" width="70" height="70">
+                 </div>
+                 <div class="col-6 d-flex justify-content-center">
+                   <img src="formulario_consultar_chamado.png" width="70" height="70">
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+      </div>
+x
     </div>
+    
   </body>
 </html>
